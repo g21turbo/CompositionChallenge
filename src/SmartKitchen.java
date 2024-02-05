@@ -2,19 +2,26 @@ import java.security.interfaces.DSAKey;
 
 public class SmartKitchen {
 
-    CoffeeMaker brewMaster = new CoffeeMaker();
-    Refrigerator refrigerator = new Refrigerator();
-    DishWasher dishWasher = new DishWasher();
+    private CoffeeMaker coffeeMaker;
+    private Refrigerator refrigerator;
+    private DishWasher dishWasher;
 
-    public void addWater() {
-        brewMaster.isHasToDoWork();
+
+    public SmartKitchen() {
+        coffeeMaker = new CoffeeMaker();
+        refrigerator = new Refrigerator();
+        dishWasher = new DishWasher();
     }
 
-    public void pourMilk() {
-        refrigerator.isHasToDoWork();
+    public CoffeeMaker getCoffeeMaker() {
+        return coffeeMaker;
     }
 
-    public void loadDishwasher () {
-        dishWasher.isHasToDoWork();
+    public Refrigerator getRefrigerator() {
+        return refrigerator;
+    }
+
+    public DishWasher getDishWasher() {
+        return dishWasher;
     }
 }

@@ -2,13 +2,14 @@ public class Refrigerator {
 
     private boolean hasWorkToDo;
 
-    public void isHasToDoWork() {
-        hasWorkToDo = true;
+    public void setHasWorkToDo(boolean hasWorkToDo) {
+        this.hasWorkToDo = hasWorkToDo;
     }
 
     public void orderFood() {
         if (hasWorkToDo) {
-            System.out.println("Order for food has been placed");
+            System.out.println("Food order has been placed");
+            hasWorkToDo = false;
         }
     }
 }

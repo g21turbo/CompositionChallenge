@@ -1,14 +1,15 @@
 public class CoffeeMaker {
 
-    private boolean hasToDoWork;
+    private boolean hasWorkToDo;
 
-    public void isHasToDoWork() {
-        hasToDoWork = true;
+    public void setHasWorkToDo(boolean hasWorkToDo) {
+        this.hasWorkToDo = hasWorkToDo;
     }
 
     public void brewCoffee() {
-        if (hasToDoWork) {
-            System.out.println("Coffee maker has begun brewing coffee");
+        if (hasWorkToDo) {
+            System.out.println("Coffee maker has started brewing");
+            hasWorkToDo = false;
         }
     }
 

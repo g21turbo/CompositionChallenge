@@ -3,14 +3,9 @@ public class Main {
 
         SmartKitchen smartKitchen = new SmartKitchen();
 
-        smartKitchen.refrigerator.isHasToDoWork();
-        smartKitchen.refrigerator.orderFood();
-
-        smartKitchen.dishWasher.isHasToDoWork();
-        smartKitchen.dishWasher.doDishes();
-
-        smartKitchen.brewMaster.isHasToDoWork();
-        smartKitchen.brewMaster.brewCoffee();
+        smartKitchen.getDishWasher().doDishes();
+        smartKitchen.getCoffeeMaker().brewCoffee();
+        smartKitchen.getRefrigerator().orderFood();
 
     }
 }
